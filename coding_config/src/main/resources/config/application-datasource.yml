@@ -1,0 +1,22 @@
+spring:
+  studb1:
+    datasource:
+      url: jdbc:mysql://gz-cynosdbmysql-grp-2c6elph1.sql.tencentcdb.com:25564/stu_db1?serverTimezone=GMT%2B8&useSSL=true
+      username: root
+      password: root#3$157
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      keyword: studb1
+  studb2:
+    datasource:
+      url: jdbc:mysql://gz-cynosdbmysql-grp-2c6elph1.sql.tencentcdb.com:25564/stu_db2?serverTimezone=GMT%2B8&useSSL=true
+      username: root
+      password: root#3$157
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      keyword: studb2
+mybatis-plus:
+  configuration:
+    #表示mybatis打印sql语句的方式，将sql打印到控制台
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/tencent/dao/mapper/*.xml
+mybatis:
+  mapper-locations: classpath:com/tencent/dao/mapper/*.xml
